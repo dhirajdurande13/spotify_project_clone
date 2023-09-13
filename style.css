@@ -1,0 +1,359 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    /* we set margin 0  in body for spacing */
+}
+
+.sidebar {
+    background-color: orange;
+    width: 340px;
+    border-radius: 1rem;
+    /* 1rem is 16px */
+    background-color: black;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: lime;
+    /* width: 100%; */
+    flex: 1;
+    border-radius: 1rem;
+    /* all remaining height shoud take */
+    overflow: auto;
+    /* get scroll bar if needed */
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player {
+    background-color: pink;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    background-color: black;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* to all div in vertical */
+    justify-content: center;
+    /* height: 100px; */
+    height: 6.2rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    /* to height whole line */
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+#Home1 {
+    opacity: 1;
+}
+
+.nav-option:hover {
+
+    opacity: 1;
+
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+
+}
+
+.nav-option a {
+    font-size: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    font-size: 1.25rem;
+
+    display: flex;
+
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+
+}
+
+.library-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+.box {
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+}
+
+.box-par1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-par2 {
+    font-size: 0.85rem;
+    opacity: 0.95;
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 8rem;
+}
+
+.sticky-nav {
+    top: 0;
+    position: sticky;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.dark-badge {
+    background-color: black;
+    color: white;
+}
+
+#down {
+    margin-right: 0.25rem;
+}
+
+.sticky-nav-options #explore {
+    width: 9rem;
+}
+
+.boxes #browse {
+    width: 9rem;
+}
+
+@media(max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #232323;
+    width: 9.3rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+
+}
+
+.card-info {
+    font-size: 0.8rem;
+    opacity: 0.8;
+
+}
+
+.footer {
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.3;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+}
+
+.playback-bar {
+    width: 50%;
+}
+
+.playback-bar {
+    display: flex;
+
+}
+
+.progress-bar {
+
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+
+    background-color: #ddd;
+    border-radius: 1rem;
+    height: .35rem;
+
+
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #798b80;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+
+
+}
+
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control #play-button {
+    height: 2rem;
+
+    opacity: 1;
+}
+
+.player-control-icon:hover {
+
+    opacity: 1;
+}
+
+.control {
+    width: 25%;
+}
+
+.album {
+    display: flex;
+    margin-right: 1rem;
+    margin: 0.5rem 0 0.5 0;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.album img {
+    height: 2.5rem;
+    /* border-radius: 0.5rem; */
+    align-self: center;
+    margin-right: 1rem;
+
+}
+
+.text1 {
+    margin-right: 1rem;
+}
+
+.text1 {
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.text2 {
+    top: -5px;
+    font-size: 0.5rem;
+}
+
+.album .icons {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin-left: 1rem;
+}
